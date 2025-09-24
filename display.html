@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        #primeira{
+            border: 5px solid rgb(245, 94, 24);
+            background-color: black;
+            color: white;
+            height: 150px;
+            font-size: 70pt;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        #segunda{
+
+        }
+        #terceira {
+            background-color: yellow;
+            border: 10px double rgb(1, 167, 1);
+            height: 300px;
+            padding: 50px;
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .subdiv{
+            background-color: rgb(58, 58, 248);
+            border: 10px solid rgb(248, 168, 181);
+            margin-bottom: 10px;
+            width: 200px;
+            height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div id="primeira"> Primeira div </div>
+    <div id="segunda">Segunda div</div>
+    <div id="terceira">
+        <div class="subdiv">Sub div 1</div>
+        <div class="subdiv">Sub div 2</div>
+        <div class="subdiv">Sub div 3</div>
+    </div>
+</body>
+</html>
