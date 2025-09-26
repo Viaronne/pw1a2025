@@ -1,6 +1,35 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card {
   border: 2px solid white;
   width: 268px;
   height: 474px;
-  background-color: yellow;
+  border-radius: 15px;
+  box-shadow: 10px 3px 20px rgb(145, 144, 144)
 } 
+.card-star{
+  display: flex;
+  justify-content: end;
+}
+.risco{
+  text-decoration: line-through;
+}
+.card-desconto{
+  display: flex;
+  justify-content: space-between;
+  font-size: 10pt;
+}
+.card-price{
+  display: flex;
+  font-size: 15pt;
+  color: rgb(255, 94, 0);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bordaR{
+  
+}
