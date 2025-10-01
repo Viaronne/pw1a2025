@@ -10,11 +10,13 @@ html, body {
   width: 268px;
   height: 474px;
   border-radius: 15px;
-  box-shadow: 10px 3px 20px rgb(145, 144, 144)
+  box-shadow: 10px 3px 20px rgb(145, 144, 144);
+  
 } 
 .card-star{
   display: flex;
   justify-content: end;
+  margin-bottom: 5px;
 }
 .risco{
   text-decoration: line-through;
@@ -23,6 +25,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   font-size: 10pt;
+  color: rgb(145, 145, 145);
 }
 .card-price{
   display: flex;
@@ -31,5 +34,53 @@ html, body {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .bordaR{
-  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 3px;
+  margin-left: 9px;
+  background-color: rgb(255, 94, 0);
+  color: white;
+  border-radius: 7px;
+  font-size: 8pt;
+  width: 34px;
+  height: 17px;
 }
+.card-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Nav{
+  margin-top: 12px;
+  font-size: 10pt;
+}
+.card-buttom-buy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  background-color: orangered;
+  width: 200px;
+  margin-left:27px;
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-description{
+  color: rgb(78, 71, 71);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-parcelamento{
+  color: rgb(145, 145, 145);
+}
+.bold{
+  font-weight: bold;
+}
+.carrinho{
+  margin-right: 30px;
+}
+.comprar{
+  margin-right: 40px;
+} 
