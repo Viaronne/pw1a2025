@@ -4,6 +4,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px;
 }
 .card {
   border: 2px solid white;
