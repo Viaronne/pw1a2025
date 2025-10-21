@@ -7,14 +7,24 @@ html, body {
 }
 .card {
   border: 2px solid white;
-  width: 268px;
-  height: 474px;
-  border-radius: 15px;
+  width: 320px;
+  height: 600px;
+  border-radius: 6px;
   box-shadow: 10px 3px 20px rgb(145, 144, 144)
+
 } 
 .card-star{
   display: flex;
   justify-content: end;
+}
+.card-image{
+  display: flex;
+  justify-content: center;
+}
+.card-description{
+  display: flex;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .risco{
   text-decoration: line-through;
@@ -23,13 +33,29 @@ html, body {
   display: flex;
   justify-content: space-between;
   font-size: 10pt;
+  margin-bottom: 15px;
 }
 .card-price{
   display: flex;
   font-size: 15pt;
   color: rgb(255, 94, 0);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-bottom: 15px;
 }
 .bordaR{
+  margin-left: 10px;
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  font-size: 12pt;
+  width: 35pt;
+}
+.card-parcelamento{
+ margin-bottom: 40px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-buttom-buy{
+  display: flex;
+  justify-content: center;
   
 }
