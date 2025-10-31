@@ -29,6 +29,7 @@
             margin: 10px;
             border-radius: 15px;
             text-align: center;
+            
         }
         table {
             background-color: yellow;
@@ -51,39 +52,39 @@
         </thead>
         <tbody>
         <tr>
-            <td>11</td> <!-- COLUNA B -->
-            <td>24</td> <!-- COLUNA I -->
-            <td>40</td><!-- COLUNA N -->
-            <td>60</td><!-- COLUNA G -->
-            <td>62</td><!-- COLUNA O -->
+            <td onclick="Marcar(this)">11</td> <!-- COLUNA B -->
+            <td onclick="Marcar(this)">24</td> <!-- COLUNA I -->
+            <td onclick="Marcar(this)">40</td><!-- COLUNA N -->
+            <td onclick="Marcar(this)">60</td><!-- COLUNA G -->
+            <td onclick="Marcar(this)">62</td><!-- COLUNA O -->
         </tr>
         <tr>
-            <td>9</td> <!-- COLUNA B -->
-            <td>26</td> <!-- COLUNA I -->
-            <td>41</td><!-- COLUNA N -->
-            <td>47</td><!-- COLUNA G -->
-            <td>63</td><!-- COLUNA O -->
+            <td onclick="Marcar(this)">9</td> <!-- COLUNA B -->
+            <td onclick="Marcar(this)">26</td> <!-- COLUNA I -->
+            <td onclick="Marcar(this)">41</td><!-- COLUNA N -->
+            <td onclick="Marcar(this)">47</td><!-- COLUNA G -->
+            <td onclick="Marcar(this)">63</td><!-- COLUNA O -->
         </tr>
         <tr>
-            <td>1</td> <!-- COLUNA B -->
-            <td>30</td> <!-- COLUNA I -->
-            <td><img src="/imagens/energia.jpg" width="45"/></td><!-- COLUNA N -->
-            <td>48</td><!-- COLUNA G -->
-            <td>69</td><!-- COLUNA O -->
+            <td onclick="Marcar(this)">1</td> <!-- COLUNA B -->
+            <td onclick="Marcar(this)">30</td> <!-- COLUNA I -->
+            <td><img src="imagens/energia.jpg" width="47"/></td> <!-- COLUNA N -->
+            <td onclick="Marcar(this)">48</td><!-- COLUNA G -->
+            <td onclick="Marcar(this)">69</td><!-- COLUNA O -->
         </tr>
         <tr>
-            <td>15</td> <!-- COLUNA B -->
-            <td>17</td> <!-- COLUNA I -->
-            <td>31</td><!-- COLUNA N -->
-            <td>54</td><!-- COLUNA G -->
-            <td>71</td><!-- COLUNA O -->
+            <td onclick="Marcar(this)">15</td> <!-- COLUNA B -->
+            <td onclick="Marcar(this)">17</td> <!-- COLUNA I -->
+            <td onclick="Marcar(this)">31</td><!-- COLUNA N -->
+            <td onclick="Marcar(this)">54</td><!-- COLUNA G -->
+            <td onclick="Marcar(this)">71</td><!-- COLUNA O -->
         </tr>
         <tr>
-            <td>7</td> <!-- COLUNA B -->
-            <td>18</td> <!-- COLUNA I -->
-            <td>33</td><!-- COLUNA N -->
-            <td>56</td><!-- COLUNA G -->
-            <td>75</td><!-- COLUNA O -->
+            <td onclick="Marcar(this)">7</td> <!-- COLUNA B -->
+            <td onclick="Marcar(this)">18</td> <!-- COLUNA I -->
+            <td onclick="Marcar(this)">33</td><!-- COLUNA N -->
+            <td onclick="Marcar(this)">56</td><!-- COLUNA G -->
+            <td onclick="Marcar(this)">75</td><!-- COLUNA O -->
         </tr>
         </tbody>
     </table>
@@ -94,6 +95,26 @@
         var G = PreencherLista (46,60)
         var O = PreencherLista (61,75)
         var SORTEIO = PreencherLista(1,75)
+
+
+
+        function numeroaleatorio(min,max)
+        {
+            var numero = Math.random() * max
+            numero = Math.floor(numero)
+            if (numero >= min)
+            {
+                return numero
+            }else{
+                numeroaleatorio (min, max)
+            }
+            
+        }
+
+
+
+
+
 
         function PreencherLista(inicial,final)
         {
@@ -125,6 +146,16 @@
         mostrarlistadetalhada (G)
         mostrarlistadetalhada (O)
         mostrarlistadetalhada (SORTEIO)
+
+        function Marcar(elementoclicado){
+            //if(elementoclicado.style.backgroundColor == "purple"){
+                //elementoclicado.style.backgroundColor = "yellow"
+            //}else
+            //{
+            //    elementoclicado.style.backgroundColor = "purple"
+           // }
+            elementoclicado.innerText = numeroaleatorio()
+        }
     </script>
 </body>
 </html>
