@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>CEP</title>
+    <link rel="stylesheet" href="cep.css"/>
+</head>
+<body>
+    <div class="formulario">
+
+        <h1> consulte seu CEP</h1>
+        <label id = "lacep">CEP</label>
+        <input type="text" id="cep"/>
+        <h1> consulte seu Endereço</h1>
+        <label>Endereço</label>
+        <input type="text" id="endereco"/>
+        <h1> consulte seu bairro</h1>
+        <label>Bairro</label>
+        <input type="text" id="bairro"/>
+        <h1> consulte seu Cidade</h1>
+        <label>Cidade</label>
+        <input type="text" id="cidade"/>
+        <h1> consulte seu Estado</h1>
+        <label>Estado</label>
+        <input type="text" id="estado"/>
+        <br>
+        <br>
+        <button onclick="verdados()">
+            consultar
+        </button>
+
+    </div>
+
+
+    <script>
+        function verdados()
+        {
+            
+           var cep = document.getElementById("cep")
+           var endereco = document.getElementById("endereco")
+           var bairro = document.getElementById("bairro")
+           var cidade = document.getElementById("cidade")
+           var estado = document.getElementById("estado")
+
+          // estado.value = "oi deu bom"
+           //cidade.style.backgroundColor = 'red'
+          // bairro.style.border = '2px solid blue'
+           //endereco.type = 'number'
+
+            if(cep.value == '')
+            {
+                var lacep = document.getElementById("lacep")
+                lacep.innerHTML = "CEP - <spam class = 'erro' >Esse campo não pode estar em branco</spam>"
+
+
+                //alert("Campo cep não pode estar em branco")
+                //cep.style.border = '2px solid red'
+                //cep.focus()
+                return false;
+            }
+            else{
+                var lacep = document.getElementById("lacep")
+                cep.style.border = '1px solid black'
+                lacep.innerHTML = 'CEP'
+            }
+
+
+           //cep.style.width = '350px'
+           //cep.style.height = '250px'        
+        }
+
+
+    </script>
+</body>
+</html>
