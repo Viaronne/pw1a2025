@@ -12,22 +12,22 @@
 
         <h1> consulte seu CEP</h1>
         <label id = "lacep">CEP</label>
-        <input type="text" id="cep"/>
+        <input type="text" id="cep" class="Inputs"/>
         <h1> consulte seu Endereço</h1>
         <label>Endereço</label>
-        <input type="text" id="endereco"/>
+        <input type="text" id="endereco" class="Inputs"/>
         <h1> consulte seu bairro</h1>
         <label>Bairro</label>
-        <input type="text" id="bairro"/>
+        <input type="text" id="bairro" class="Inputs"/>
         <h1> consulte seu Cidade</h1>
         <label>Cidade</label>
-        <input type="text" id="cidade"/>
+        <input type="text" id="cidade" class="Inputs"/>
         <h1> consulte seu Estado</h1>
         <label>Estado</label>
-        <input type="text" id="estado"/>
+        <input type="text" id="estado" class="Inputs"/>
         <br>
         <br>
-        <button onclick="verdados()">
+        <button onclick="verdados()" class="consultar">
             consultar
         </button>
 
@@ -43,6 +43,16 @@
            var bairro = document.getElementById("bairro")
            var cidade = document.getElementById("cidade")
            var estado = document.getElementById("estado")
+
+            var url = "https://viacep.com.br/ws/"+cep.value+"/json/"
+            fetch(url)
+            .then( (response) => response.json() )
+            .then( (dados) => {
+                endereco.value = dados.logradouro
+                bairro.value = dados.bairro
+                cidade.value = dados.localidade
+                estado.value = dados.estado
+            })
 
           // estado.value = "oi deu bom"
            //cidade.style.backgroundColor = 'red'

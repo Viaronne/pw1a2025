@@ -2,16 +2,20 @@ body, html{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #cccccc;
+    background-image: url("imagens/fundocep.png");
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .formulario{
 width: 500px;
 background-color: #fff;
 justify-content: center;
 text-align: center;
+border-radius:5%
 }
 label{
     display: block;
@@ -22,12 +26,22 @@ input{
     display: block;
     text-align: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 button{
     width: 300px;
 }
 .erro{
     color: red;
+}
+.consultar{
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color:rgb(178, 118, 235);
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+}
+.Inputs{
+    
 }
